@@ -48,18 +48,26 @@
                     <h3>Forret</h3></div>
             </section>
             <section class="row forret">
-                <div class="col-xs-4 col-xs-offset-2">
-                    <img src="imgs/small/ringbroed-druer-sm.jpg">
-                    <p>Russisk Ringbrød Med Druer / 39,-</p>
+                <template id="produkt_template">
+                    <div class="col-xs-4 col-xs-offset-2">
+                        <img class="data_billede" src="imgs/small/ringbroed-druer-sm.jpg">
+                        <p class="data_navn">DATA_NAVN</p>
+                        <p class="pris"><span class="data_pris">DATA_PRIS</span>,-</p>
+                        <!-- pris class sættes ved udsolgt -->
+                        <p class="udsolgttekst">
+                            Retten er udsolgt</p>
+                        <p class="rabatpris">
+                            Rabat <span class="data_rabatpris">DATA_RABATPRIS</span>,-</p>
 
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-lg modalknap" data-toggle="modal" data-target="#myModal">
-                        Mere Info
-                    </button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg modalknap" data-toggle="modal" data-target="#myModal">
+                            Mere Info
+                        </button>
 
 
-                </div>
+                    </div>
+                </template>
 
                 <div class="col-xs-4">
                     <img src="imgs/small/caviarbruschetta-sm.jpg">
