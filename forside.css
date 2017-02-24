@@ -74,7 +74,23 @@ nav {
     font-size: 2rem;
     margin: 2vw;
 }
-.dessert h3 {
+.desserter h3 {
+    word-spacing: 1vw;
+    text-align: center;
+    font-family: 'roboto';
+    color: darkred;
+    font-size: 5rem;
+    margin: 5vw;
+}
+.sideorders h3 {
+    word-spacing: 1vw;
+    text-align: center;
+    font-family: 'roboto';
+    color: darkred;
+    font-size: 5rem;
+    margin: 5vw;
+}
+.drikkevarer h3 {
     word-spacing: 1vw;
     text-align: center;
     font-family: 'roboto';
@@ -110,8 +126,3 @@ nav {
 .modal-body {
     height: 300px;
 }
-
-/*.infotext {
-    font-size: 1rem;
-    text-align: left;
-}*/

@@ -42,13 +42,17 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
+    console.log("." + produkt.kategori);
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+
     // append klon til .produkt_liste
     //document.querySelector(".produktliste").appendChild(klon);
-    console.log("." + produkt.kategori);
-    if (produkt.kategori == 'forretter') {
-        document.querySelector(".forretter").appendChild(klon);
-    } else if (produkt.kategori == 'hovedretter') {
-        document.querySelector(".hovedretter").appendChild(klon);
-    }
+    //console.log("." + produkt.kategori);
+    //if (produkt.kategori == 'forretter') {
+    //    document.querySelector(".forretter").appendChild(klon);
+    //} else if (produkt.kategori == 'hovedretter') {
+    //    document.querySelector(".hovedretter").appendChild(klon);
+    //}
     //document.querySelector(".forretter").appendChild(klon);
 }
