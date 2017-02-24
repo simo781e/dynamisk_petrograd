@@ -28,6 +28,27 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
 
+    if (produkt.udsolgt == false) {
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
+    if (produkt.udsolgt == true || produkt.rabatsats == 0) {
+        var rabatpris = klon.querySelector(".rabatpris");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
+    }
+
     // append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+    //document.querySelector(".produktliste").appendChild(klon);
+    console.log("." + produkt.kategori);
+    if (produkt.kategori == 'forretter') {
+        document.querySelector(".forretter").appendChild(klon);
+    } else if (produkt.kategori == 'hovedretter') {
+        document.querySelector(".hovedretter").appendChild(klon);
+    }
+    //document.querySelector(".forretter").appendChild(klon);
 }
