@@ -10,6 +10,9 @@ body {
     color: darkred;
     font-size: 2.5rem;
 }
+.kategori img {
+    height: 267px;
+}
 nav {
     position: fixed;
     text-align: center;
@@ -50,7 +53,7 @@ nav {
     font-family: 'roboto';
     color: darkred;
     font-size: 5rem;
-    margin: 5vw;
+    margin: 15vw;
 }
 .forret p {
     text-align: center;
@@ -65,7 +68,7 @@ nav {
     font-family: 'roboto';
     color: darkred;
     font-size: 5rem;
-    margin: 5vw;
+    margin: 15vw;
 }
 .hovedret p {
     text-align: center;
@@ -80,7 +83,7 @@ nav {
     font-family: 'roboto';
     color: darkred;
     font-size: 5rem;
-    margin: 5vw;
+    margin: 15vw;
 }
 .sideorders h3 {
     word-spacing: 1vw;
@@ -88,7 +91,7 @@ nav {
     font-family: 'roboto';
     color: darkred;
     font-size: 5rem;
-    margin: 5vw;
+    margin: 15vw;
 }
 .drikkevarer h3 {
     word-spacing: 1vw;
@@ -96,7 +99,7 @@ nav {
     font-family: 'roboto';
     color: darkred;
     font-size: 5rem;
-    margin: 5vw;
+    margin: 15vw;
 }
 .dessert p {
     text-align: center;
@@ -125,4 +128,7 @@ nav {
 }
 .modal-body {
     height: 300px;
+}
+.ret {
+    margin: 5vw;
 }
